@@ -1,0 +1,481 @@
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Akrobat", sans-serif;
+}
+
+.hero {
+  background-image: url(../img/aboutBckg.png);
+  background-size: cover;
+}
+
+#navbar {
+  z-index: 999;
+  position: fixed;
+  position: top;
+  top: 0;
+  width: 100%;
+  padding-bottom: 35px;
+  transition: all 0.1s;
+}
+
+.nav-colored {
+  background-color: rgba(18, 26, 29, 0.8588235294);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.navb-white {
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 46px;
+  justify-content: space-between;
+}
+.navbar__middle {
+  font-size: 19px;
+  max-width: 702px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__middle-link {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar__middle .activeLink {
+  border-bottom: 1px solid #fff;
+  margin-top: 3px;
+}
+.navbar__middle-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s;
+  margin-top: 3px;
+}
+.navbar__middle-link:hover::after {
+  width: 100%;
+}
+.navbar__right a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Akrobat Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.main {
+  font-size: 74px;
+  font-family: "Akrobat", sans-serif;
+  color: #fff;
+  padding-top: 275px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__right {
+  max-width: 530px;
+  width: 100%;
+}
+.main__right-top {
+  font-size: 26px;
+  color: #FFFFFF;
+  line-height: 32px;
+  padding-bottom: 21px;
+}
+.main__right-txt {
+  font-size: 23px;
+  line-height: 33px;
+  padding-bottom: 21px;
+}
+.main .text {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+}
+.main .text .heroLogo {
+  position: absolute;
+  top: -80px;
+}
+.main__title {
+  text-transform: uppercase;
+  margin-left: 100px;
+  letter-spacing: 4px;
+  max-width: 940px;
+  width: 100%;
+  font-family: "Akrobat Bold", sans-serif;
+}
+.main__subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-family: "Akrobat", sans-serif;
+  margin-left: 100px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  max-width: 540px;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.mixedUse {
+  background-image: url(../img/mixed_use.png);
+}
+.mixedUse .mixed {
+  color: #333333;
+}
+.mixedUse .mixed .leftSide {
+  max-width: 600px;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 190px;
+}
+.mixedUse .mixed__top {
+  font-size: 26px;
+  font-family: "Akrobat Bold", sans-serif;
+  padding-bottom: 21px;
+}
+.mixedUse .mixed__bottom {
+  font-size: 23px;
+  padding-bottom: 21px;
+}
+.mixedUse .mixed__bottom p {
+  padding-bottom: 21px;
+}
+
+.bgLocation {
+  background-image: url(..//img/location.png);
+  background-size: cover;
+}
+
+.location {
+  font-family: "Akrobat SemiBold", sans-serif;
+  font-weight: bold;
+  margin-right: 160px;
+  padding-bottom: 106px;
+}
+.location .mapImg {
+  max-width: 1300px;
+  width: 100%;
+  height: 645px;
+  background-image: url(../img/map.png);
+  position: relative;
+}
+.location .mapImg .open {
+  position: absolute;
+  right: 31px;
+  top: 31px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 23px;
+  color: #333333;
+}
+.location .mapImg .open img {
+  transition: all 0.3s;
+  margin-right: 13px;
+}
+.location .mapImg .open img:hover {
+  transform: scale(1.1);
+}
+.location__top {
+  padding-top: 105px;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  justify-content: space-between;
+}
+.location__top-btn button {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background: none;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 22px 75px;
+  cursor: pointer;
+  font-family: "Akrobat SemiBold", sans-serif;
+  border-radius: 100px;
+  transition: all 0.3s;
+  margin-bottom: 45px;
+}
+.location__top-btn button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.location__title {
+  font-size: 74px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.location__subtitle {
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  font-family: "Akrobat", sans-serif;
+  font-weight: 400;
+}
+
+.charTitle {
+  color: rgb(255, 255, 255);
+  font-size: 62px;
+  font-family: "Akrobat ExtraBold", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 95px;
+  letter-spacing: -3px;
+  line-height: 86px;
+  padding-bottom: 60px;
+}
+
+.characteristicSection {
+  display: flex;
+  padding-bottom: 50px;
+}
+.characteristicSection .characteristic__left-cards {
+  display: flex;
+  margin-left: 100px;
+  text-align: center;
+}
+.characteristicSection .characteristic__left-cards .charCard {
+  margin-right: 90px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.characteristicSection .characteristic__left-cards .charCard img {
+  border-radius: 50%;
+  border: 2px solid #4F5563;
+  padding: 5px;
+}
+.characteristicSection .characteristic__left-cards .charCard p {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  line-height: 33px;
+  padding: 20px;
+  font-family: "Akrobat", sans-serif;
+  font-weight: 400;
+}
+.characteristicSection .characteristic__right {
+  margin-left: 70px;
+}
+.characteristicSection .characteristic__right .characteristic__numbers {
+  padding-bottom: 65px;
+}
+.characteristicSection .characteristic__right .characteristic__numbers-numb {
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.characteristicSection .characteristic__right .characteristic__numbers-subtitle {
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+}
+
+.insightSection .insight__text {
+  font-size: 74px;
+  font-family: "Akrobat Bold", sans-serif;
+  font-weight: 800;
+  color: #333333;
+  line-height: 88.8px;
+  margin-left: 96px;
+  padding-top: 94px;
+}
+.insightSection .insight__img {
+  margin-top: -360px;
+}
+
+.architecture {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 115px;
+}
+.architecture__left-top {
+  font-size: 74px;
+  font-family: "Akrobat Bold", sans-serif;
+  font-weight: 800;
+  color: #333333;
+  line-height: 88.8px;
+  margin-left: 96px;
+}
+.architecture__left-middle {
+  font-size: 35px;
+  font-family: "Akrobat Bold", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  max-width: 391px;
+  padding-right: 45px;
+  width: 100%;
+  margin-left: 96px;
+  padding-top: 23px;
+  text-transform: uppercase;
+}
+.architecture__left-bottom {
+  display: flex;
+  position: relative;
+}
+.architecture__left-bottom .buttons {
+  display: flex;
+  margin-left: 96px;
+}
+.architecture__left-bottom .buttons .carouselBtn {
+  font-size: 32px;
+  background: none;
+  border: none;
+  margin-right: 25px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.architecture__left-bottom .buttons .carouselBtn:hover {
+  transform: scale(1.1);
+}
+.architecture__left-bottom .btnImage .imgC {
+  position: absolute;
+  left: 330px;
+  padding-bottom: 86px;
+}
+.activeCard {
+  background-color: #121A1D;
+}
+
+.clickSection {
+  background-image: url(../img/click_about.png);
+  margin-top: 250px;
+}
+.clickSection .click {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.clickSection .click__left-top {
+  font-size: 50px;
+  font-family: "Akrobat Bold", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-left: 96px;
+  max-width: 860px;
+  width: 100%;
+  margin-right: 115px;
+}
+.clickSection .click__left .cards {
+  display: flex;
+  margin-left: 80px;
+}
+.clickSection .click__left .cards .card {
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 234px;
+  height: 234px;
+  margin: 22px;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-family: "Akrobat Bold", sans-serif;
+}
+.clickSection .click__right {
+  max-width: 340px;
+  width: 100%;
+}
+.clickSection .click__right .touch .cardInsight {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding-bottom: 39px;
+  padding-top: 13px;
+}
+.clickSection .click__right-text {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding-bottom: 39px;
+  padding-top: 13px;
+}
+
+.aboutDeveloper {
+  display: flex;
+  position: relative;
+  background-color: #414650;
+}
+.aboutDeveloper__left {
+  padding-left: 300px;
+  padding-right: 50px;
+}
+.aboutDeveloper__left img {
+  margin-bottom: 70px;
+}
+.aboutDeveloper__left-title {
+  color: rgb(255, 255, 255);
+  font-size: 62px;
+  font-family: "Akrobat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 80px;
+  padding-bottom: 23px;
+}
+.aboutDeveloper__left-subtitle {
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 50px;
+  padding-right: 150px;
+}
+.aboutDeveloper__left-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutDeveloper__left-contacts a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.aboutDeveloper__left-contacts .phone {
+  font-size: 32px;
+  font-weight: 600;
+}
+.aboutDeveloper__left-contacts .location {
+  padding-bottom: 15px;
+}
+.aboutDeveloper__left .footerDownload {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.aboutDeveloper__left .footerDownload img {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.aboutDeveloper__left .footerDownload a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.aboutDeveloper__left .footerDownload a span {
+  border-bottom: 1px solid #fff;
+}
+.aboutDeveloper__left .policy {
+  color: rgb(255, 255, 255);
+}

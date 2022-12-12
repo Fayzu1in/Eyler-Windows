@@ -1,0 +1,553 @@
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (max-width: 375px) {
+        max-width: 316px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+       }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akrobat', sans-serif;
+}
+.hero{
+    background-image: url(../img/buy_heo.png);
+    background-size: cover;
+    @media only screen and (max-width: 375px) {
+        background-image: url(../img/buy_navbar_mobile.png);
+    }
+}
+
+.burger{
+    display: none;
+    @media only screen and (max-width: 375px) {
+        display: block;
+    }
+}
+.mob{
+    display: none;
+    @media only screen and (max-width: 375px) {
+        display: block;
+    }
+}
+
+
+// #navbar{
+//     z-index: 999;
+//     position: fixed;
+//     position: top;
+//     top: 0;
+//     width: 100%;
+//     padding-bottom: 35px;
+//     // background-color: #4F5563;
+//     transition: all .1s;
+// }
+// .nav-colored{
+//     background-color: #121a1ddb;
+//     backdrop-filter: blur(10px);
+// }
+.navb-white{
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+}
+.nav-transparent{
+    background-color: transparent;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    justify-content: space-between;
+    @media only screen and (max-width: 375px) {
+        padding-top: 29px;
+    }
+
+
+    &__left{
+        img{
+
+            @media only screen and (max-width: 375px) {
+             height: 49px;   
+            }
+        }
+    }
+
+    &__middle{
+        font-size: 19px;
+        max-width: 702px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 375px) {
+            display: none;
+        }
+      
+        &-link{
+            text-decoration: none;
+            color: #fff;
+         
+        }
+        &-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            transition: width .3s;
+
+           margin-top: 3px;
+        }
+        &-link:hover::after {
+            width: 100%;
+            //transition: width .3s;
+        }
+    }
+    &__right{
+        @media only screen and (max-width: 375px) {
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Akrobat Bold', sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+        .activeLink{
+            border-bottom: 1px solid #fff;
+           
+        }
+
+
+
+.main{
+    font-size: 74px;
+   
+    font-family: 'Akrobat ExtraBold', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    // margin-top: 355px;
+    // padding-top: 460px;
+    padding-bottom: 150px;
+    @media only screen and (max-width: 375px) {
+        padding-bottom: 64px;
+    
+    }
+  
+.text{
+    position: relative;
+    padding-top: 420px;
+    @media only screen and (max-width: 375px) {
+        padding-top: 40px;
+        
+      
+    }
+    .heroLogo{
+        position: absolute;
+        top: -80px;
+    }
+}
+    &__title{
+        text-transform: uppercase;
+        margin-left: 100px;
+        letter-spacing: 4px;
+        max-width: 940px;
+        width: 100%;
+        @media only screen and (max-width: 375px) {
+            font-size: 30px;
+            
+            margin-left: 0;
+            letter-spacing: 0;
+            width: unset;
+        }
+       
+       
+        
+    }
+
+    &__subtitle{
+
+        color: rgba(255, 255, 255, 1);
+        font-size: 26px;
+        font-family: 'Akrobat', sans-serif;
+        margin-left: 100px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        max-width: 540px;
+        width: 100%;
+        padding-right: 20px;
+        @media only screen and (max-width: 375px) {
+        font-family: 'Akrobat Bold', sans-serif;
+
+            font-size: 23px;
+            // text-align: center;
+            margin-left: 0;
+            margin-top: 12px;
+            letter-spacing: 0;
+            }
+    }
+}
+.heroMobile{
+    display: none;
+    @media only screen and (max-width: 375px) {
+    display: block;
+    margin-bottom: -10px;
+    }
+}
+.instalmentSection{
+    background-image: url(../img/instalment.png);
+    background-repeat: no-repeat;
+   background-size: contain;
+    background-position: right;
+    @media only screen and (max-width: 375px) {
+    background-image: none;
+    }
+    .instalmentImage{
+        display: none;
+    @media only screen and (max-width: 375px) {
+        display: block;
+    }
+      }
+//    height: 850px;
+.instalment{
+     
+        &__left{
+            &-title{
+                font-size: 74px;
+                
+                font-family: 'Akrobat ExtraBold', sans-serif;
+                font-weight: bold;
+               color: rgba(51, 51, 51, 1);
+                // margin-top: 355px;
+                padding-top: 266px;
+                padding-bottom: 16px;
+                text-transform: uppercase;
+                margin-left: 100px;
+                // letter-spacing: 4px;
+                // max-width: 940px;
+                width: 100%;
+                @media only screen and (max-width: 375px) {
+                    font-size: 30px;
+                    
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    width: unset;
+                    padding-top: 60px;
+                }
+            }
+            &-subtitle{
+            max-width: 436px;
+            width: 100%;
+            color: rgba(51, 51, 51, 1);
+            font-size: 30px;
+            margin-left: 100px;
+            padding-bottom: 312px;
+            @media only screen and (max-width: 375px) {
+                font-family: 'Akrobat Bold', sans-serif;
+        
+                    font-size: 23px;
+                    // text-align: center;
+                    margin-left: 0;
+                    margin-top: 18px;
+                    letter-spacing: 0;
+                    padding-bottom: 0;
+                    }
+
+            }
+        }
+    }
+}
+.ipotekaSection{
+    background-image: url(../img/ipotekaBckg.png);
+    margin-top:-135px;
+    // height: 500px;
+    @media only screen and (max-width: 375px) {
+    margin-top: 0;
+    }
+    .ipoteka{
+     &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+        @media only screen and (max-width: 375px) {
+        padding-top: 60px;
+        flex-direction: column;
+        }
+        &-left{
+            
+            .ipotekaTitle{
+                font-size: 74px;
+                
+                font-family: 'Akrobat ExtraBold', sans-serif;
+                font-weight: bold;
+               color: rgba(255, 255, 255, 1);
+                // margin-top: 355px;
+                // padding-top: 266px;
+                // padding-bottom: 16px;
+                text-transform: uppercase;
+                margin-left: 100px;
+                // letter-spacing: 4px;
+                // max-width: 940px;
+                width: 100%;
+                @media only screen and (max-width: 375px) {
+                    font-size: 30px;
+                    
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    width: unset;
+                }
+            }
+            .ipotekaSubtitle{
+                font-size: 35px;
+                line-height: 42px;
+                color: rgba(255, 255, 255, 1);
+                padding-top: 40px;
+                margin-left: 100px;
+                @media only screen and (max-width: 375px) {
+                    font-family: 'Akrobat Bold', sans-serif;
+            
+                        font-size: 23px;
+                        // text-align: center;
+                        margin-left: 0;
+                        margin-top: 12px;
+                        letter-spacing: 0;
+                        padding-bottom: 0;
+                        padding-top: 0;
+                        }
+            }
+            .lists{
+               
+                margin-left: 100px;
+                font-family: 'Akrobat', sans-serif;
+                font-weight: 500;
+                padding-top: 33px;
+                @media only screen and (max-width: 375px) {
+                padding-top: 22px;
+                margin-left: 0;
+                font-weight: 400;
+                
+                }
+                .list{
+                    font-size: 25px;
+                    color: rgba(255, 255, 255, 1);
+                    line-height: 35px;
+                    padding-bottom: 29px;
+                    @media only screen and (max-width: 375px) {
+                        font-size: 18px;
+                        line-height: unset;
+                        padding-bottom: 15px;
+                        
+                    }  
+
+                    .circle{
+                        margin-bottom: 4px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .ipotekaSecondTitle{
+                font-size: 74px;
+                font-weight: 800;
+                font-family: 'Akrobat ExtraBold', sans-serif;
+                line-height: 88.8px;
+                color: rgba(255, 255, 255, 1);
+                margin-left: 100px;
+                width: 642px;
+                @media only screen and (max-width: 375px) {
+                    font-size: 27px;
+                    line-height: unset;
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    width: unset;
+                    font-family: 'Akrobat ', sans-serif;
+                    font-weight: 600;
+
+                }
+          
+            }
+            .ipotekaImageMobile{
+                display: none;
+                @media only screen and (max-width: 375px) {
+                display: block;
+                height: 300px;
+                margin-top: 32px;
+                margin-bottom: 69px;
+                }
+            }
+        }
+        &-right{
+            @media only screen and (max-width: 375px) {
+            display: none;
+            }
+        }
+     }
+     &__bottom{
+         margin: 0 auto;
+         margin-top: 76px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        padding-bottom: 40px;
+        @media only screen and (max-width: 375px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 26px;
+        }
+        .banks{
+            transition: all .3s;
+            img{
+            @media only screen and (max-width: 375px) {
+            height: 86px;
+            margin-bottom: 13px;
+            }
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+     }
+    }
+}
+.footer{
+   
+    display: flex;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    padding-bottom: 45px;
+
+    @media only screen and (max-width: 375px) {
+    flex-direction: column;
+    background-image: none;
+    background-color: #414650;
+    }
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+        &__info{
+            margin-left: 355px;
+            padding-top: 100px;
+            @media only screen and (max-width: 375px) {
+            margin-left: 0;
+            max-width: 337px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 50px;
+            }
+            &-contacts{
+                font-size: 74px;
+                font-weight: 800;
+                font-family: 'Akrobat ExtraBold', sans-serif;
+                line-height: 88.8px;
+                color: rgba(255, 255, 255, 1);
+                padding-bottom: 43px;
+                @media only screen and (max-width: 375px) {
+                    font-size: 30px;
+                    padding-bottom: 0;
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    width: unset;
+                }
+
+            }
+            &-location{
+                color: rgba(255, 255, 255, 1);
+                font-weight: 700;
+                font-family: 'Akrobat', sans-serif;
+                font-size: 23px;
+                line-height: 27.6px;
+                text-decoration: none;
+                @media only screen and (max-width: 375px) {
+                line-height: unset;
+                font-weight: 400;
+                }
+
+            }
+            &-number{
+                color: rgba(255, 255, 255, 1);
+                font-size: 32.34px;
+                line-height: 39px;
+                font-weight: 700;
+                font-family: 'Akrobat', sans-serif;
+                padding-bottom: 51px;
+                padding: 15px;
+                @media only screen and (max-width: 375px) {
+                font-weight: 600;
+                padding: 0;
+                padding-top: 15px;
+                }
+
+            }
+            &-download{
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+                margin-bottom: 60px;
+                img{
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color:  rgba(255, 255, 255, 1);
+                    
+                    span{
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+            &-button{
+                font-size: 18px;
+                color: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(255, 255, 255, 1);
+                padding: 22px 69px;
+                background-color: unset;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .3s;
+                margin-bottom: 187px;
+                &:hover{
+                    color: rgba(51, 51, 51, 1);
+                    background-color: rgba(255, 255, 255, 1);
+                }
+                @media only screen and (max-width: 375px) {
+                display: none;
+                }
+            }
+            &-sub{
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 19px;
+              
+            }
+        }
+}

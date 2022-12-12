@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="http://fonts.cdnfonts.com/css/akrobat" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/dynamic_page.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div id="navbar" class="nav-transparent">
+        <div class="navbar container">
+          <div class="mobileLeft">
+            <img class="burger" src="./assets/img/Burger_Menu.png" alt="" />
+          </div>
+          <div class="navbar__left">
+            <img src="./assets/img/logo.png" alt="" />
+          </div>
+          <div class="navbar__middle">
+            <a class="navbar__middle-link" href="">О проекте</a>
+            <a class="navbar__middle-link" href="">Выбрать лот</a>
+            <a class="navbar__middle-link" href="">Как купить</a>
+            <a class="navbar__middle-link activeLink" href="">Инвестиции</a>
+            <a class="navbar__middle-link" href="">Галерея</a>
+            <a class="navbar__middle-link" href="">Ход строительства</a>
+          </div>
+          <div class="navbar__right">
+            <a href="tel:+74957652626">+7 (495) 765-26-26</a>
+          </div>
+          <a href="tel:+74957652626" class="mobileRight">
+            <img class="mob" src="./assets/img/phone-call.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- <div id="navbar" class="nav-transparent">
+        <div class="navbar container">
+          <a class="navbar__left" href="./index.html">
+            <img src="./assets/img/logo.png" alt=""
+          /></a>
+
+          <div class="navbar__middle">
+            <a class="navbar__middle-link" href="./about.html">О проекте</a>
+            <a class="navbar__middle-link" href="./lots.html">Выбрать лот</a>
+            <a class="navbar__middle-link" href="./buy_page.html">Как купить</a>
+            <a class="navbar__middle-link" href="./investments.html"
+              >Инвестиции</a
+            >
+            <a class="navbar__middle-link" href="./gallery.html">Галерея</a>
+            <a class="navbar__middle-link activeLink" href="./dynamic.html"
+              >Ход строительства</a
+            >
+          </div>
+          <div class="navbar__right">
+            <a href="tel:+74957652626">+7 (495) 765-26-26</a>
+          </div>
+        </div>
+      </div> -->
+      <div class="main container">
+        <div class="text">
+          <div class="text__left">ДИНАМИКА СТРОИТЕЛЬСТВА</div>
+          <div class="text__right">
+            <div class="text__right-card">
+              <div class="date">
+                <p class="date__date">СЕНТЯБРЬ 2022</p>
+                <p class="date__photo">20 ФОТО</p>
+              </div>
+              <div class="infoText">
+                <img src="./assets/img/circle.png" alt="" />
+                <p>
+                  Ведутся работы: Разработка котлована, бурение и монтаж
+                  ограждения. Ведутся работы: Разработка котлована, бурение и
+                  монтаж ограждения. Ведутся работы: Разработка котлована,
+                  бурение и монтаж ограждения. Ведутся работы: Разработка
+                  котлована, бурение и монтаж ограждения.
+                </p>
+              </div>
+              <div class="image">
+                <button>СМОТРЕТЬ ФОТО</button>
+              </div>
+            </div>
+            <div class="text__right-card">
+              <div class="date">
+                <p class="date__date">ОКТЯБРЬ 2022</p>
+                <p class="date__photo">10 ФОТО</p>
+              </div>
+              <div class="infoText">
+                <img src="./assets/img/circle.png" alt="" />
+                <p>
+                  Ведутся работы: Разработка котлована, бурение и монтаж
+                  ограждения. Ведутся работы: Разработка котлована, бурение и
+                  монтаж ограждения. Ведутся работы: Разработка котлована,
+                  бурение и монтаж ограждения. Ведутся работы: Разработка
+                  котлована, бурение и монтаж ограждения.
+                </p>
+              </div>
+              <div class="image">
+                <button>СМОТРЕТЬ ФОТО</button>
+              </div>
+            </div>
+            <div class="text__right-card">
+              <div class="date">
+                <p class="date__date">НОЯБРЬ 2022</p>
+                <p class="date__photo">5 ФОТО</p>
+              </div>
+              <div class="infoText">
+                <img src="./assets/img/circle.png" alt="" />
+                <p>
+                  Ведутся работы: Разработка котлована, бурение и монтаж
+                  ограждения. Ведутся работы: Разработка котлована, бурение и
+                  монтаж ограждения. Ведутся работы: Разработка котлована,
+                  бурение и монтаж ограждения. Ведутся работы: Разработка
+                  котлована, бурение и монтаж ограждения.
+                </p>
+              </div>
+              <div class="image">
+                <button>СМОТРЕТЬ ФОТО</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer container">
+        <div class="footer__left">
+          2022 Эйлер. Все авторские права защищены.
+        </div>
+        <div class="footer__right">
+          <a class="footer__right-link" href="">Политика конфиденциальности</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    let myNav = document.getElementById("navbar");
+    window.onscroll = function () {
+      "use strict";
+      if (
+        document.body.scrollTop >= 100 ||
+        document.documentElement.scrollTop >= 100
+      ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+      } else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+      }
+    };
+  </script>
+</html>

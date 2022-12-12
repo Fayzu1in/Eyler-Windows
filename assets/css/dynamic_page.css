@@ -1,0 +1,248 @@
+body {
+  background-image: url(../img/dynamic.png);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    max-width: 316px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Akrobat", sans-serif;
+}
+
+.burger {
+  display: none;
+}
+@media only screen and (max-width: 420px) {
+  .burger {
+    display: block;
+  }
+}
+
+.mob {
+  display: none;
+}
+@media only screen and (max-width: 420px) {
+  .mob {
+    display: block;
+  }
+}
+
+#navbar {
+  z-index: 999;
+  position: fixed;
+  position: top;
+  top: 0;
+  width: 100%;
+  padding-bottom: 35px;
+  transition: all 0.1s;
+}
+
+.nav-colored {
+  background-color: rgba(18, 26, 29, 0.8588235294);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.navb-white {
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 46px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 420px) {
+  .navbar {
+    padding-top: 29px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .navbar__left img {
+    height: 49px;
+  }
+}
+.navbar__middle {
+  font-size: 19px;
+  max-width: 702px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 420px) {
+  .navbar__middle {
+    display: none;
+  }
+}
+.navbar__middle-link {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar__middle-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s;
+  margin-top: 3px;
+}
+.navbar__middle-link:hover::after {
+  width: 100%;
+}
+@media only screen and (max-width: 420px) {
+  .navbar__right {
+    display: none;
+  }
+}
+.navbar__right a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Akrobat Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.main {
+  color: #fff;
+  padding-top: 208px;
+}
+.main .text {
+  display: flex;
+  justify-content: space-between;
+}
+.main .text__left {
+  font-size: 74px;
+  font-weight: 800;
+  line-height: 88.8px;
+  max-width: 523px;
+  width: 100%;
+}
+.main .text__right {
+  max-width: 603px;
+  width: 100%;
+}
+.main .text__right-card .date {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.main .text__right-card .date__date {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: "Akrobat SemiBold", sans-serif;
+}
+.main .text__right-card .date__photo {
+  font-size: 23px;
+}
+.main .text__right-card .infoText {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Akrobat", sans-serif;
+  padding-right: 70px;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 28px;
+}
+.main .text__right-card .infoText img {
+  margin-top: 12px;
+  padding-right: 10px;
+}
+.main .text__right-card .image {
+  max-width: 603px;
+  width: 100%;
+  background-image: url(../img/dynamic_image.png);
+  height: 397px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.main .text__right-card .image button {
+  font-size: 18px;
+  color: #FFFFFF;
+  background: unset;
+  border: 1px solid #FFFFFF;
+  padding: 22px 60px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .text__right-card .image button:hover {
+  color: rgb(51, 51, 51);
+  background-color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 54px;
+}
+.footer__left {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer__right-link {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    padding-top: 29px;
+  }
+  .navbar .navbar__middle {
+    display: none;
+  }
+  .navbar .navbar__right {
+    display: none;
+  }
+  .main {
+    padding: 118px 27px 0 27px;
+  }
+  .main .text {
+    flex-direction: column;
+  }
+  .main .text__left {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 218px;
+    margin-bottom: 50px;
+  }
+  .main .text__right .text__right-card .date {
+    padding-bottom: 14px;
+  }
+  .main .text__right .text__right-card .infoText {
+    padding-right: unset;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    gap: 14px;
+    padding-left: 27px;
+  }
+}

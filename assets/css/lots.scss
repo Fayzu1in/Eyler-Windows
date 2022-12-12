@@ -1,0 +1,662 @@
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (max-width: 420px) {
+        max-width: 316px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+       }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akrobat', sans-serif;
+}
+.hero{
+    background-image: url(../img/lots_bckg.png);
+    background-size: cover;
+    @media only screen and (max-width: 420px) {
+    
+    
+        background-image: url(../img/lots_mobile2.png);
+        background-size: cover;
+    
+}
+}
+.burger{
+    display: none;
+    @media only screen and (max-width: 420px) {
+        display: block;
+    }
+}
+.mob{
+    display: none;
+    @media only screen and (max-width: 420px) {
+        display: block;
+    }
+}
+#navbar{
+    z-index: 999;
+    position: fixed;
+    position: top;
+    top: 0;
+    width: 100%;
+    padding-bottom: 35px;
+    // background-color: #4F5563;
+    transition: all .1s;
+}
+.nav-colored{
+    background-color: #121a1ddb;
+    backdrop-filter: blur(10px);
+}
+.navb-white{
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+}
+.nav-transparent{
+    background-color: transparent;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    justify-content: space-between;
+    @media only screen and (max-width: 420px) {
+        padding-top: 29px;
+    }
+
+
+    &__left{
+        img{
+
+            @media only screen and (max-width: 420px) {
+             height: 49px;   
+            }
+        }
+    }
+
+    &__middle{
+        font-size: 19px;
+        max-width: 702px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 420px) {
+            display: none;
+        }
+      
+        &-link{
+            text-decoration: none;
+            color: #fff;
+         
+        }
+        &-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            transition: width .3s;
+
+           margin-top: 3px;
+        }
+        &-link:hover::after {
+            width: 100%;
+            //transition: width .3s;
+        }
+    }
+    &__right{
+        @media only screen and (max-width: 420px) {
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Akrobat Bold', sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+
+
+.main{
+    padding-bottom: 120px;
+    @media only screen and (max-width: 420px) {
+    
+    padding-bottom: 59px;
+    }
+    &__top{
+        font-size: 74px;
+        max-width: 547px;
+        width: 100%;
+        color: #FFFFFF;
+        line-height: 88.8px;
+        font-family: 'Akrobat Bold', sans-serif;
+        padding-top: 208px;
+        font-weight: 800;
+        @media only screen and (max-width: 420px) {
+            font-size: 30px;
+            line-height: unset;
+            margin-left: 0;
+            letter-spacing: 0;
+            width: unset;
+            padding-top: 150px;
+            padding-bottom: 80px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        margin-left: -35px;
+        @media only screen and (max-width: 420px) {
+            flex-direction: column;
+            margin-left: 0;
+            align-items: center;
+        
+    }
+        &-left{
+            margin-right: 31px;
+        @media only screen and (max-width: 420px) {
+            margin-right: 0;
+        }
+            .floorTxt{
+                font-size: 20px;
+                color: #FFFFFF;
+                line-height: 24px;
+                font-family: 'Akrobat SemiBold', sans-serif;
+                padding-top: 64px;
+                padding-bottom: 24px;
+            }
+            .floor{
+                .floorsBtn{
+                    display: flex;
+                    align-items: center;
+        @media only screen and (max-width: 420px) {
+        // justify-content: space-around;
+        }
+                    button{
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        border-radius: 50%;
+                        background-color: unset;
+                        height: 33px;
+                        width: 33px;
+                        border: 1px solid #FFFFFF;
+                        cursor: pointer;
+                        margin-right: 9px;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                       
+                    }
+                }
+            }
+            .price{
+                padding-top: 30px;
+                .line{
+                    display: flex;
+                    align-items: center;
+                   
+                    .btnTxt{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: #FFFFFF;
+                       .spanBtn{
+                        margin-bottom: 6px;
+                        margin-top: 6px;
+                       }
+                        .priceBtn{
+                            background: unset;
+                            border: unset;
+                        }
+                    }
+                }
+            }
+        }
+        &-center{
+            .area{
+             .areaTxt{
+                font-size: 20px;
+                color: #FFFFFF;
+                line-height: 24px;
+                font-family: 'Akrobat SemiBold', sans-serif;
+                padding-top: 64px;
+                padding-bottom: 24px;
+             }
+             .line{
+                display: flex;
+                align-items: center;
+                
+                .btnTxt{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: #FFFFFF;
+                   .spanBtn{
+                    margin-bottom: 6px;
+                    margin-top: 6px;
+                   }
+                    .priceBtn{
+                        background: unset;
+                        border: unset;
+                    }
+                }
+            }
+            }
+
+            .lotsPrice{
+                padding-top: 30px;
+                .lotsTxt{
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    line-height: 24px;
+                    font-family: 'Akrobat SemiBold', sans-serif;
+                    // padding-top: 64px;
+                    padding-bottom: 24px;
+                 }
+                 .line{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 8px;
+                  
+                    .btnTxt{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: #FFFFFF;
+                       .spanBtn{
+                        margin-bottom: 6px;
+                        margin-top: 6px;
+                       }
+                        .priceBtn{
+                            background: unset;
+                            border: unset;
+                        }
+                    }
+                }
+            }
+        }
+        &-right{
+            margin-left: 35px;
+        @media only screen and (max-width: 420px) {
+        margin-left: 0;
+        }
+            
+            .terrasa{
+                .terassatxt{
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    line-height: 24px;
+                    font-family: 'Akrobat SemiBold', sans-serif;
+                    padding-top: 64px;
+                    padding-bottom: 24px;
+                }
+                .terrasaBtn{
+                    // display: flex;
+                    align-items: center;
+                    .terrasaBtnCards{
+                        display: flex;
+                        margin-bottom: 20px;
+                    }
+                    .cardBtn{
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        border-radius: 50%;
+                        background-color: unset;
+                        height: 33px;
+                        width: 33px;
+                        border: 1px solid #FFFFFF;
+                        cursor: pointer;
+                        margin-right: 9px;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+        @media only screen and (max-width: 420px) {
+        
+        height: 51px;
+        width: 51px;
+}
+                    }
+                    .unicumBtn{
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        border-radius: 47px;
+                        border: 1px solid #FFFFFF;
+                        background: unset;
+                        padding: 10px 36.5px;
+                        cursor: pointer;
+        @media only screen and (max-width: 420px) {
+        width: 234px;
+        }
+                    }
+                }
+                .tarrasaButtons{
+                    display: flex;
+                    margin-top: 140px;
+                    align-items: center;
+        @media only screen and (max-width: 420px) {
+            margin-top: 64px;   
+        }
+                    .showBtn{
+                        
+                            font-size: 18px;
+                            color: #FFFFFF;
+                            padding: 20px 62px;
+                            border-radius: 47px;
+                            margin-right: 34px;
+                            background-color: #414650;
+                            border: 1px solid #FFFFFF;
+                            cursor: pointer;
+        @media only screen and (max-width: 420px) {
+        padding: 20px 40px;
+        }
+                    }
+                    .resetBtn{
+                        
+                        color: #9EA1A6;
+                        background: unset;
+                        border: unset;
+                        cursor: pointer;
+        @media only screen and (max-width: 420px) {
+        font-size: 18px;
+        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
+.lineImage{
+    @media only screen and (max-width: 420px) {
+    max-width: 220px;width: 100%;
+    }
+
+}
+
+.parameters{
+    padding-top: 100px;
+    @media only screen and (max-width: 420px) {
+    padding-top: 0;
+    }
+    &__top{
+        font-size: 50px;
+        color: #333333;
+        font-family: 'Akrobat Bold', sans-serif;
+        font-weight: 800;
+        padding-bottom: 58px;
+        @media only screen and (max-width: 420px) {
+            font-size: 30px;
+            line-height: unset;
+            margin-left: 0;
+            letter-spacing: 0;
+            width: unset;
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+
+    }
+    &__middle{
+        margin-bottom: 42px;
+       .parameterCard{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        @media only screen and (max-width: 420px) {
+        
+        }
+        .checkBox{
+            border-radius: 50%;
+        }
+        &__img{
+        @media only screen and (max-width: 420px) {
+        
+            height: 128px;
+        }
+        }
+        &__infoText{
+            p{
+
+                @media only screen and (max-width: 420px) {
+                padding-bottom: 9px;
+            
+            }
+            }
+        }
+       }
+    }
+    &__bottom{
+
+    }
+}
+ 
+  
+
+  
+.footer{
+   
+    display: flex;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    padding-bottom: 45px;
+
+    @media only screen and (max-width: 420px) {
+    flex-direction: column;
+    background-image: none;
+    background-color: #414650;
+    }
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+        &__info{
+            margin-left: 355px;
+            padding-top: 100px;
+            @media only screen and (max-width: 420px) {
+            margin-left: 0;
+            max-width: 337px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 50px;
+            }
+            &-contacts{
+                font-size: 74px;
+                font-weight: 800;
+                font-family: 'Akrobat ExtraBold', sans-serif;
+                line-height: 88.8px;
+                color: rgba(255, 255, 255, 1);
+                padding-bottom: 43px;
+                @media only screen and (max-width: 420px) {
+                    font-size: 30px;
+                    padding-bottom: 0;
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    width: unset;
+                }
+
+            }
+            &-location{
+                color: rgba(255, 255, 255, 1);
+                font-weight: 700;
+                font-family: 'Akrobat', sans-serif;
+                font-size: 23px;
+                line-height: 27.6px;
+                text-decoration: none;
+                @media only screen and (max-width: 420px) {
+                line-height: unset;
+                font-weight: 400;
+                }
+
+            }
+            &-number{
+                color: rgba(255, 255, 255, 1);
+                font-size: 32.34px;
+                line-height: 39px;
+                font-weight: 700;
+                font-family: 'Akrobat', sans-serif;
+                padding-bottom: 51px;
+                padding: 15px;
+                @media only screen and (max-width: 420px) {
+                font-weight: 600;
+                padding: 0;
+                padding-top: 15px;
+                }
+
+            }
+            &-download{
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+                margin-bottom: 60px;
+                img{
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color:  rgba(255, 255, 255, 1);
+                    
+                    span{
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+            &-button{
+                font-size: 18px;
+                color: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(255, 255, 255, 1);
+                padding: 22px 69px;
+                background-color: unset;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .3s;
+                margin-bottom: 187px;
+                &:hover{
+                    color: rgba(51, 51, 51, 1);
+                    background-color: rgba(255, 255, 255, 1);
+                }
+                @media only screen and (max-width: 420px) {
+                display: none;
+                }
+            }
+            &-sub{
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 19px;
+              
+            }
+        }
+}
+
+
+   
+// .footer{
+   
+//     display: flex;
+//     background-image: url(../img/footer.png);
+//     background-repeat: no-repeat;
+//     padding-bottom: 45px;
+
+//         &__info{
+//             margin-left: 355px;
+//             padding-top: 100px;
+//             &-contacts{
+//                 font-size: 74px;
+//                 font-weight: 800;
+//                 font-family: 'Akrobat ExtraBold', sans-serif;
+//                 line-height: 88.8px;
+//                 color: rgba(255, 255, 255, 1);
+//                 padding-bottom: 43px;
+
+//             }
+//             &-location{
+//                 color: rgba(255, 255, 255, 1);
+//                 font-weight: 700;
+//                 font-family: 'Akrobat', sans-serif;
+//                 font-size: 23px;
+//                 line-height: 27.6px;
+//                 text-decoration: none;
+                
+
+//             }
+//             &-number{
+//                 color: rgba(255, 255, 255, 1);
+//                 font-size: 32.34px;
+//                 line-height: 39px;
+//                 font-weight: 700;
+//                 font-family: 'Akrobat', sans-serif;
+//                 padding-bottom: 51px;
+//                 padding: 15px;
+
+//             }
+//             &-download{
+//                 display: flex;
+//                 align-items: center;
+//                 margin-top: 50px;
+//                 margin-bottom: 60px;
+//                 img{
+//                     margin-bottom: 0;
+//                     margin-right: 10px;
+//                 }
+//                 a{
+//                     text-decoration: none;
+//                     color:  rgba(255, 255, 255, 1);
+                    
+//                     span{
+//                         border-bottom: 1px solid #fff;
+//                     }
+//                 }
+//             }
+//             &-button{
+//                 font-size: 18px;
+//                 color: rgba(255, 255, 255, 1);
+//                 border: 1px solid rgba(255, 255, 255, 1);
+//                 padding: 22px 69px;
+//                 background-color: unset;
+//                 border-radius: 100px;
+//                 cursor: pointer;
+//                 transition: all .3s;
+//                 margin-bottom: 187px;
+//                 &:hover{
+//                     color: rgba(51, 51, 51, 1);
+//                     background-color: rgba(255, 255, 255, 1);
+//                 }
+//             }
+//             &-sub{
+//                 font-size: 16px;
+//                 color: rgba(255, 255, 255, 1);
+//                 margin-bottom: 19px;
+              
+//             }
+//         }
+// }

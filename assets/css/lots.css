@@ -61,13 +61,13 @@
 .nav-colored {
   background-color: rgba(18, 26, 29, 0.8588235294);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .navb-white {
   background-color: #fff;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .nav-transparent {
@@ -96,6 +96,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.navbar__middle .activeLink {
+  border-bottom: 1px solid #fff;
+  margin-top: 3px;
 }
 @media only screen and (max-width: 420px) {
   .navbar__middle {
@@ -143,7 +147,7 @@
   font-size: 74px;
   max-width: 547px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 88.8px;
   font-family: "Akrobat Bold", sans-serif;
   padding-top: 208px;
@@ -181,7 +185,7 @@
 }
 .main__bottom-left .floorTxt {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 24px;
   font-family: "Akrobat SemiBold", sans-serif;
   padding-top: 64px;
@@ -193,12 +197,12 @@
 }
 .main__bottom-left .floor .floorsBtn button {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50%;
   background-color: unset;
   height: 33px;
   width: 33px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   cursor: pointer;
   margin-right: 9px;
   padding: 10px;
@@ -218,7 +222,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main__bottom-left .price .line .btnTxt .spanBtn {
   margin-bottom: 6px;
@@ -230,7 +234,7 @@
 }
 .main__bottom-center .area .areaTxt {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 24px;
   font-family: "Akrobat SemiBold", sans-serif;
   padding-top: 64px;
@@ -244,7 +248,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main__bottom-center .area .line .btnTxt .spanBtn {
   margin-bottom: 6px;
@@ -259,7 +263,7 @@
 }
 .main__bottom-center .lotsPrice .lotsTxt {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 24px;
   font-family: "Akrobat SemiBold", sans-serif;
   padding-bottom: 24px;
@@ -273,7 +277,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main__bottom-center .lotsPrice .line .btnTxt .spanBtn {
   margin-bottom: 6px;
@@ -293,7 +297,7 @@
 }
 .main__bottom-right .terrasa .terassatxt {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 24px;
   font-family: "Akrobat SemiBold", sans-serif;
   padding-top: 64px;
@@ -308,12 +312,12 @@
 }
 .main__bottom-right .terrasa .terrasaBtn .cardBtn {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50%;
   background-color: unset;
   height: 33px;
   width: 33px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   cursor: pointer;
   margin-right: 9px;
   padding: 10px;
@@ -330,9 +334,9 @@
 }
 .main__bottom-right .terrasa .terrasaBtn .unicumBtn {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 47px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: unset;
   padding: 10px 36.5px;
   cursor: pointer;
@@ -354,12 +358,12 @@
 }
 .main__bottom-right .terrasa .tarrasaButtons .showBtn {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 62px;
   border-radius: 47px;
   margin-right: 34px;
   background-color: #414650;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   cursor: pointer;
 }
 @media only screen and (max-width: 420px) {
@@ -368,7 +372,7 @@
   }
 }
 .main__bottom-right .terrasa .tarrasaButtons .resetBtn {
-  color: #9EA1A6;
+  color: #9ea1a6;
   background: unset;
   border: unset;
   cursor: pointer;
